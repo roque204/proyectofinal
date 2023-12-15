@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi economia</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="titulo">MI APLICACAION DE FINANZAS </div>
+   <div class="titulo">Total: $<span id="totalAmount">0</span> </div> 
+    
+    <form id="transactionForm" class="form-ap">  
+        
+        <div class="claseFormulario">
+            <label for="ingreso" class="search"> ingreso</label>
+            <input id="ingreso" type="radio" name="transactionType" value="Ingreso">
+
+            <label for="egreso" class="search"> egreso</label>
+            <input id="egreso" type="radio" name="transactionType" value="Egreso"> 
+        </div>
+        <div class="claseFormulario">
+            <label for="transactionDescription" class="search"> Descripcion</label>
+            <input id="transactionDescription" class="search" type="text" name="transactionDescription"> 
+        </div>
+        <div class="claseFormulario">
+            <label for="transactionAmount" class="search" >Monto</label>
+            <input id="transactionAmount" class="search" type="number" name="transactionAmount">
+        </div>
+        <div class="claseFormulario">
+            <label for="transactionCategory" class="search">Categoria</label>
+
+            <select id="transactionCategory" class="search" type="text" name="transactionCategory"  >
+                <option value="Salud">Salud</option>
+                <option value="Casa">Casa</option>
+                <option value="Cafe">Cafe</option>
+                <option value="Educacion">Educacion</option>
+                <option value="Regalos">Regalos</option>
+                <option value="Alimentacion">Alimentacion</option>
+                <option value="Adicional">Adicional Billetera</option>
+                <option value="Otros">Otros</option>
+               </select> <br>
+
+        </div>
+        <div class="claseFormulario">
+        <button id="botonDeEnvio2" class="search">Añadir</button>
+        </div>
+    </form>
+
+    <div>
+        <table class="tableFormat" id="transactionTable">
+            <tr>
+                <th class="search">
+                    Tipo
+                </th>
+                <th class="search">
+                    Descripcion
+                </th>
+                <th class="search">
+                    Monto
+                </th>
+                <th class="search">
+                    Categoria
+                </th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

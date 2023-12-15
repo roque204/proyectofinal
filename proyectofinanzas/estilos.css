@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+
+    --primary-color: #093f25;
+    --secundary-color:#0b633b;
+    /* --primary-color:#22254b;
+    --secundary-color:#373b69; */
+}
+
+body{
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 10%;
+    margin-top: 5%;
+   
+}
+.titulo{
+    text-align: center;
+    margin: 20px;
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.search
+{
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    color: #fff;
+    font-family: inherit;
+}
+
+.search:focus{
+    outline: 0;
+    background-color: var(--primary-color);
+
+}
+
+.search::placeholder{
+    color: #f0f0f3;
+}
+
+.claseFormulario{
+    padding-top: 10px;
+}
+
+
+
+form{
+    text-align: center;
+}
+
+.form-ap{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    
+}
+
+.claseFormulario{
+    background-color: var(--secundary-color);
+    padding-bottom: 40px;
+}
+
+#botonDeEnvio{
+    font-size: 22px;
+}
+
+td, th{
+    padding: 10px;
+    border: solid rgb(0, 0, 0);
+}
+
+.tableFormat{
+    margin: 30px auto;
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+background-color: var(--primary-color);      
+    }
+
+.tableFormat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+}
+
+@media only screen and (max-width: 480px) {
+    
+body {
+        background-color: var(--primary-color);
+    }
+
+    .search{
+        padding: 0.2rem 0.1rem;
+        border-radius: 50px;
+        font-size: 0.9rem;
+    }
+.form-ap{
+    display: flex;
+    flex-direction: column;
+    margin: 1px;
+    
+}
+    
+    }
